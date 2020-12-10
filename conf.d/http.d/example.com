@@ -1,4 +1,4 @@
-# upstream up {
+# upstream http_u {
 #      server                    127.0.0.255:80;
 #      keepalive                 16;
 # }
@@ -22,7 +22,7 @@ server {
         include                 zap/error_pages.conf;
         
         # location / {
-        #        proxy_pass      up;
+        #        proxy_pass      http://http_u;
         #        include         proxy_params;
         # }
 }
