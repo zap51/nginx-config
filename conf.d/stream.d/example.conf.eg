@@ -1,0 +1,11 @@
+# A simple DNS Server configuration.
+server {
+        listen 127.0.0.1:53 udp reuseport;
+        listen [::1]:53 udp reuseport;
+        
+        # include zap/ssl_stream.conf;
+        
+        proxy_timeout 20s;
+        proxy_pass    8.8.8.8:53;
+}
+        
