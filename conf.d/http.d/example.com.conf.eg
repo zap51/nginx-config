@@ -21,7 +21,7 @@ server {
         # include               zap/http3_quic.conf;
         include                 zap/headers_hsts_preload.conf;
         include                 zap/error_pages.conf;
-        include                 zap/brotli.conf;
+        # include               zap/brotli.conf;
         # include               zap/gzip.conf;
         
         # location / {
